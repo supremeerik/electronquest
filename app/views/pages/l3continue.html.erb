@@ -1,0 +1,16 @@
+<div class='panel-heading'>
+  <h1>You chose to continue.</h1>
+</div>
+
+<div class='panel-body'>
+  <%= image_tag("Green door.jpg",  height: "100") %> <%= image_tag("Red door.jpg",  height: "100") %>
+  <p>You come across two doors, green and red. Which one do you go through?</p>
+
+  <div style='float: left; width: 100px;'>
+    <%= button_to "Green" ,pages_l4green_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+ 
+  <div style='float: left; width: auto;'>
+    <%= button_to "Red" , pages_l4red_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+</div>

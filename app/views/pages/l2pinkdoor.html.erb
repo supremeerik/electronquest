@@ -1,0 +1,16 @@
+<div class='panel-heading'>
+  <h1>You chose the pink door</h1>
+</div>
+
+<div class='panel-body'>
+  <%= image_tag("Treasure chest.jpg",  height: "100") %>
+  <p>You find a chest. Do you open it or continue on?</p>
+
+  <div style='float: left; width: 100px;'>
+    <%= button_to "Open" ,pages_l3openchestright_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+ 
+  <div style='float: left; width: auto;'>
+    <%= button_to "Continue" , pages_l3continueright_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+</div>

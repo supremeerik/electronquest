@@ -1,0 +1,17 @@
+<div class='panel-heading'>
+  <h1>You chose jump</h1>
+</div>
+
+<div class='panel-body'>
+    <%= image_tag("Treasure chest.jpg",  height: "100") %>
+  <p>You succsessfully made it across the lava pit.You then come across a treasure chest. Do you open the chest or continue on your way?</p>
+
+  <div style='float: left; width: 100px;'>
+    <%= button_to "Open" ,pages_lose_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+ 
+  <div style='float: left; width: auto;'>
+    <%= button_to "Continue" , pages_l3continue_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+</div>
+

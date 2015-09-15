@@ -1,0 +1,16 @@
+<div class='panel-heading'>
+  <h1>You chose red.</h1>
+</div>
+
+<div class='panel-body'>
+  <%= image_tag("PillCat.jpg",  height: "300") %>
+  <p>You come up to a cat that offers you 2 pills - A red one and a blue one. Which one do you take?</p>
+
+  <div style='float: left; width: 100px;'>
+    <%= button_to "Red" ,pages_win_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+ 
+  <div style='float: left; width: auto;'>
+    <%= button_to "Blue" , pages_lose_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+</div>

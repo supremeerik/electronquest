@@ -1,0 +1,16 @@
+<div class='panel-heading'>
+  <h1>You chose to continue</h1>
+</div>
+
+<div class='panel-body'>
+  <%= image_tag("Two way tunnel.jpg",  height: "100") %>
+  <p>You find yourself at an intersection. Do you go left or right?</p>
+
+  <div style='float: left; width: 100px;'>
+    <%= button_to "Left" ,pages_l4left_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+ 
+  <div style='float: left; width: auto;'>
+    <%= button_to "Right" , pages_lose_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+</div>

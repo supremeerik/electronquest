@@ -1,0 +1,12 @@
+<div class='panel-heading'>
+  <h1>Hooray! You win!!!</h1>
+</div>
+
+<div class='panel-body'>
+  <%= image_tag("ElectronWin.jpg",  height: "200") %>
+  <p>You've surived the epic quest to become a stable hydrogen atom!!</p>
+
+  <div style='float: left; width: auto;'>
+    <%= button_to "Play Again?" , pages_home_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+</div>

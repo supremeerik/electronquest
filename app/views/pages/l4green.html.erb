@@ -1,0 +1,16 @@
+<div class='panel-heading'>
+  <h1>You chose the green door</h1>
+</div>
+
+<div class='panel-body'>
+  <%= image_tag("Beggar.jpg",  height: "100") %>
+  <p>You find a lonely beggar with a tin can for spare coins. Do you give him your spare money or walk away?</p>
+
+  <div style='float: left; width: 100px;'>
+    <%= button_to "Give Coins" ,pages_win_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+ 
+  <div style='float: left; width: auto;'>
+    <%= button_to "Walk Away" , pages_lose_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+</div>

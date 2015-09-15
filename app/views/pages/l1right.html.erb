@@ -1,0 +1,16 @@
+<div class='panel-heading'>
+  <h1>You chose right</h1>
+</div>
+
+<div class='panel-body'>
+  <%= image_tag("PinkDoorHeart.PNG",  height: "100") %> <%= image_tag("BatCave.jpg",  height: "100") %>
+  <p>You find two paths; a creepy bat cave, and a pink door with a heart. Do you go through the pink door or into the cave?</p>
+
+  <div style='float: left; width: 100px;'>
+    <%= button_to "Bat Cave" ,pages_lose_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+ 
+  <div style='float: left; width: auto;'>
+    <%= button_to "Pink Door" , pages_l2pinkdoor_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+</div>

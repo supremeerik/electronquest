@@ -1,0 +1,12 @@
+<div class='panel-heading'>
+  <h1>Oh no! You lose!</h1>
+</div>
+
+<div class='panel-body'>
+  <%= image_tag("hydrogenbomb.jpg",  height: "199") %>
+  <p>Sorry, you've become unstable!</p>
+
+  <div style='float: left; width: auto;'>
+    <%= button_to "Play Again?" , pages_home_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+</div>

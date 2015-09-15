@@ -1,0 +1,17 @@
+<div class='panel-heading'>
+  <h1>You chose left</h1>
+</div>
+
+<div class='panel-body'>
+  <%= image_tag("GameHost.jpg",  height: "100") %>
+  <p>You come into a room with a game show host in it. He asks you a SCIENCE QUESTION! OH NO! You must answer to continue.</p>
+  <p>The question is - "True or false: The number of protons are always the same as the number of neutrons in any atom."</p>
+
+  <div style='float: left; width: 100px;'>
+    <%= button_to "True" ,pages_lose_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+ 
+  <div style='float: left; width: auto;'>
+    <%= button_to "False" , pages_win_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+</div>

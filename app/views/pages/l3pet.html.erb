@@ -1,0 +1,14 @@
+<div class='panel-heading'>
+  <h1>You have a pet!</h1>
+</div>
+
+<div class='panel-body'>
+  <%= image_tag("PetDog.jpg",  height: "100") %>
+  <%= image_tag("Two way tunnel.jpg",  height: "100") %>
+  <p>You come across a two way intersection, but your dog smells the right way as dangerous.</p>
+
+  <div style='float: left; width: 100px;'>
+    <%= button_to "Left" ,pages_l4left_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+ 
+</div>

@@ -1,0 +1,22 @@
+<div class='panel-heading'>
+  <h1>Welcome to......</h1>
+  <h1>Electron Quest!</h1>
+</div>
+
+<div class='panel-body'>
+  <%= image_tag("hydrogen.jpg",  height: "100") %>
+  <p>You are a Hydrogen Atom going on an epic quest to get an electron so that you have
+  a full valence shell and you are stable and happy! Better get going!</p>
+  <p> In this game you have 2 choices and whatever choice you make leads to more choices -
+  There are 4 different paths to victory, try to find them all!</p>
+  <%= image_tag("Two way tunnel.jpg",  height: "100") %>
+  <p>You come across a two way cavern - do you go left, or right?</p>
+
+  <div style='float: left; width: 100px;'>
+    <%= button_to "left" ,pages_l1left_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+ 
+  <div style='float: left; width: auto;'>
+    <%= button_to "right" , pages_l1right_path, :method=>:get, :class => 'btn btn-primary' %>
+  </div>
+</div>
